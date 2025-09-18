@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Đăng ký</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    nav a { margin: 0 10px; text-decoration: none; color: blue; }
+    nav { margin-bottom: 20px; }
+    form { width: 300px; }
+    label { display: block; margin-top: 10px; }
+    input, select, textarea { width: 100%; padding: 6px; margin-top: 5px; }
+    button { margin-top: 15px; padding: 10px; background: blue; color: white; border: none; cursor: pointer; }
+    button:hover { background: darkblue; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Form Đăng ký</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Trang chủ</a> |
+    <a href="experience.html">Kinh nghiệm</a> |
+    <a href="register.html">Đăng ký</a>
+  </nav>
+
+  <main>
+    <form action="#" method="post">
+      <label>Họ và tên:</label>
+      <input type="text" name="fullname" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Mật khẩu:</label>
+      <input type="password" name="password" required>
+
+      <label>Giới tính:</label>
+      <select name="gender">
+        <option value="male">Nam</option>
+        <option value="female">Nữ</option>
+        <option value="other">Khác</option>
+      </select>
+
+      <label>Sở thích:</label>
+      <textarea name="hobbies" rows="3"></textarea>
+
+      <button type="submit">Đăng ký</button>
+    </form>
+  </main>
+
+</body>
+</html>
